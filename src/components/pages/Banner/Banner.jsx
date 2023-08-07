@@ -1,6 +1,4 @@
 import React from "react";
-import banner from "../../../assets/images/R.jpg";
-import Plan from "../PlanSection/Plan";
 
 const Banner = () => {
     return (

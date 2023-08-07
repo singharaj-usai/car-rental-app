@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Button from "./Button/Button";
 import Booking from "../Booking/Booking"
-import Plan from "../PlanSection/Plan"
+import Plans from "../Plans/Plans";
 import dodgeChallenger from "../../../assets/images/Red-Dodge-Challenger-PNG-Pic.png"; // Replace with the actual path to your car image
 import jeepCherokee from "../../../assets/images/2018-Jeep-Cherokee-Firecracker-Red.png";
 import volkswagen from "../../../assets/images/main-car.png";
@@ -11,6 +11,7 @@ import Choose from "../Choose/Choose";
 import heroBg from "../../../assets/images/hero-bg.png";
 import Banner from "../Banner/Banner";
 import VehicleModels from "../VehicleModels/VehicleModels";
+
 
 const carImages = [dodgeChallenger, durango, jeepCherokee, volkswagen];
 
@@ -76,13 +77,7 @@ const Home = () => {
             <div className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
-                        <div className="text-center md:mx-2">
-                            <h3 className="text-2xl text-gray-800 font-medium mb-4">Plan your trip now</h3>
-                            <h1 className="text-5xl text-gray-800 font-bold mb-12">
-                                Quick & Easy Car Rentals
-                            </h1>
-                            <Plan/>
-                        </div>
+                            <Plans/>
                     </div>
                 </div>
             </div>
