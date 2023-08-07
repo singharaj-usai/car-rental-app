@@ -1,13 +1,13 @@
 import React from "react";
 
 const PlanItem = (props) => {
-    const { image, title, price, features } = props.plan;
+    const { image, title, price, features, advanced } = props.plan;
     return (
-        <div className="p-6">
+        <div className={`p-6 rounded-lg border-2 border-gray-300 ${advanced ? "bg-red-500" : "bg-white"}`}>
             <img src={image} alt={title} className="w-36 h-36 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">{title}</h3>
-            <p className="text-gray-600 mb-4">{price} / month</p>
-            <ul className="space-y-2">
+            <h3 className={`${advanced? "text-white" : "text-black"} text-xl font-semibold mb-2`}>{title}</h3>
+            <p className={`${advanced? "text-gray-50" : "text-gray-600"} mb-4`}>{price} / month</p>
+            <ul className={`${advanced? "text-gray-50" : "text-gray-900"} space-y-2`}>
                 {features.map((feature, index) => (
                     <li key={index} className="flex items-center">
                         <svg
