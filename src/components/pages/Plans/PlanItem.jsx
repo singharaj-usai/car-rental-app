@@ -3,7 +3,7 @@ import React from "react";
 const PlanItem = (props) => {
     const { image, title, price, features, advanced } = props.plan;
     return (
-        <div className={`p-6 rounded-lg border-2 border-gray-300 ${advanced ? "bg-red-500" : "bg-white"}`}>
+        <div className={`p-6 rounded-lg ${advanced ? "bg-red-500 shadow-lg" : "bg-white border-2 border-gray-300"}`}>
             <img src={image} alt={title} className="w-36 h-36 mx-auto mb-4" />
             <h3 className={`${advanced? "text-white" : "text-black"} text-xl font-semibold mb-2`}>{title}</h3>
             <p className={`${advanced? "text-gray-50" : "text-gray-600"} mb-4`}>{price} / month</p>
