@@ -12,6 +12,7 @@ import heroBg from "../../../assets/images/hero-bg.png";
 import Banner from "../Banner/Banner";
 import VehicleModels from "../VehicleModels/VehicleModels";
 import FAQ from "../FAQ/FAQ";
+import DownloadApp from "../DownloadApp/DownloadApp";
 
 
 const carImages = [dodgeChallenger, durango, jeepCherokee, volkswagen];
@@ -94,6 +95,13 @@ const Home = () => {
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
                         <FAQ/>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-wrap mb-6">
+                <div className="w-full leading-relaxed">
+                    <div className="w-full leading-relaxed">
+                        <DownloadApp/>
                     </div>
                 </div>
             </div>
