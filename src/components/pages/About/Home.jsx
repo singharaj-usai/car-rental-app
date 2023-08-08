@@ -13,6 +13,7 @@ import Banner from "../Banner/Banner";
 import VehicleModels from "../VehicleModels/VehicleModels";
 import FAQ from "../FAQ/FAQ";
 import DownloadApp from "../DownloadApp/DownloadApp";
+import ParallaxBanner from "../ParallaxBanner/ParallaxBanner";
 
 
 const carImages = [dodgeChallenger, durango, jeepCherokee, volkswagen];
@@ -105,6 +106,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <ParallaxBanner/>
         </section>
     );
 };
