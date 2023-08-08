@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, NavLink, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
 import Home from "../../pages/About/Home";
 import VehicleModels from "../../pages/VehicleModels/VehicleModels";
 import Logo from "../../../assets/images/car-rental-logo.png";
