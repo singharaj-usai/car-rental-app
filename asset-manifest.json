@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/car-rental-app/static/css/main.bbff6b0f.chunk.css",
-    "main.js": "/car-rental-app/static/js/main.ed520e58.chunk.js",
-    "main.js.map": "/car-rental-app/static/js/main.ed520e58.chunk.js.map",
+    "main.js": "/car-rental-app/static/js/main.3db01bfc.chunk.js",
+    "main.js.map": "/car-rental-app/static/js/main.3db01bfc.chunk.js.map",
     "runtime-main.js": "/car-rental-app/static/js/runtime-main.c7ac1ca6.js",
     "runtime-main.js.map": "/car-rental-app/static/js/runtime-main.c7ac1ca6.js.map",
-    "static/js/2.97237ce6.chunk.js": "/car-rental-app/static/js/2.97237ce6.chunk.js",
-    "static/js/2.97237ce6.chunk.js.map": "/car-rental-app/static/js/2.97237ce6.chunk.js.map",
+    "static/js/2.1fe5c53d.chunk.js": "/car-rental-app/static/js/2.1fe5c53d.chunk.js",
+    "static/js/2.1fe5c53d.chunk.js.map": "/car-rental-app/static/js/2.1fe5c53d.chunk.js.map",
     "static/js/3.7e3e0a50.chunk.js": "/car-rental-app/static/js/3.7e3e0a50.chunk.js",
     "static/js/3.7e3e0a50.chunk.js.map": "/car-rental-app/static/js/3.7e3e0a50.chunk.js.map",
     "index.html": "/car-rental-app/index.html",
     "static/css/main.bbff6b0f.chunk.css.map": "/car-rental-app/static/css/main.bbff6b0f.chunk.css.map",
-    "static/js/2.97237ce6.chunk.js.LICENSE.txt": "/car-rental-app/static/js/2.97237ce6.chunk.js.LICENSE.txt",
+    "static/js/2.1fe5c53d.chunk.js.LICENSE.txt": "/car-rental-app/static/js/2.1fe5c53d.chunk.js.LICENSE.txt",
+    "static/media/2013-Aventador.0d6a4048.jpg": "/car-rental-app/static/media/2013-Aventador.0d6a4048.jpg",
     "static/media/2018-Jeep-Cherokee-Firecracker-Red.png": "/car-rental-app/static/media/2018-Jeep-Cherokee-Firecracker-Red.208fc70a.png",
     "static/media/Red-Dodge-Challenger-PNG-Pic.png": "/car-rental-app/static/media/Red-Dodge-Challenger-PNG-Pic.a8b42ff8.png",
     "static/media/app-store.aa6b073c.png": "/car-rental-app/static/media/app-store.aa6b073c.png",
@@ -32,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c7ac1ca6.js",
-    "static/js/2.97237ce6.chunk.js",
+    "static/js/2.1fe5c53d.chunk.js",
     "static/css/main.bbff6b0f.chunk.css",
-    "static/js/main.ed520e58.chunk.js"
+    "static/js/main.3db01bfc.chunk.js"
   ]
 }
