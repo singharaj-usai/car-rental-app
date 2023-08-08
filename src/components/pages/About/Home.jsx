@@ -84,7 +84,20 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Banner/>
+            <div className="flex flex-wrap">
+                <div className="w-full leading-relaxed">
+                    <div className="w-full leading-relaxed">
+                        <Banner/>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-wrap mb-6">
+                <div className="w-full leading-relaxed">
+                    <div className="w-full leading-relaxed">
+                        <ParallaxBanner/>
+                    </div>
+                </div>
+            </div>
             <div className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
@@ -106,7 +119,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <ParallaxBanner/>
+
         </section>
     );
 };
