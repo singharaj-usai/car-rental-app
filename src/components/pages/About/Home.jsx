@@ -14,6 +14,7 @@ import VehicleModels from "../VehicleModels/VehicleModels";
 import FAQ from "../FAQ/FAQ";
 import DownloadApp from "../DownloadApp/DownloadApp";
 import ParallaxBanner from "../ParallaxBanner/ParallaxBanner";
+import PhoneBanner from "../PhoneBanner/PhoneBanner";
 
 
 const carImages = [dodgeChallenger, durango, jeepCherokee, volkswagen];
@@ -115,11 +116,17 @@ const Home = () => {
             <div className="flex flex-wrap">
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
+                        <PhoneBanner/>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-wrap">
+                <div className="w-full leading-relaxed">
+                    <div className="w-full leading-relaxed">
                         <DownloadApp/>
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };
