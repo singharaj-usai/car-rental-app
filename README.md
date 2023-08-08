@@ -19,7 +19,7 @@ The main challenge was finishing a full front-end project website to showcase on
 
 ## Links
 
-Live Site URL: COMING SOON
+Live Site URL: https://singharaj-usai.github.io/car-rental-app/
 
 Repository URL: https://github.com/singharaj-usai/car-rental-app
 
