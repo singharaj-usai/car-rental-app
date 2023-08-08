@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
 import Home from "../../pages/About/Home";
 import VehicleModels from "../../pages/VehicleModels/VehicleModels";
 import Logo from "../../../assets/images/car-rental-logo.png";
 import Aventador from "../../../assets/images/2013-Aventador.jpg";
 import R from "../../../assets/images/red-aston-martin.jpg";
-import {FaPhone} from "react-icons/fa";
+import {FaPhone, FaBars, FaTimes} from "react-icons/fa";
 import PhoneBanner from "../../pages/PhoneBanner/PhoneBanner";
 
 const navbarData = [
@@ -41,24 +41,39 @@ const navbarData = [
 ];
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
     return (
         <Router>
-            <nav className="mb-3 py-4 z-10 sticky top-0 bg-white shadow rounded">
+            <nav className="mb-3 py-6 z-10 top-0 bg-white shadow rounded">
                 <ul className="font-semibold flex justify-between items-center flex-wrap">
                     {/* Logo placeholder */}
                     <div className="pl-12 flex items-center">
                         <img src={Logo} alt="Logo" className="w-20 h-auto" />
                     </div>
 
+                    {/* Hamburger Menu Button */}
+                    <div className="lg:hidden">
+                        <button
+                            onClick={toggleMenu}
+                            className="pr-9 text-gray-800 hover:text-red-500 focus:outline-none"
+                        >
+                            {menuOpen ? <FaTimes /> : <FaBars />}
+                        </button>
+                    </div>
+
                     {/* Centered navbar links */}
-                    <div className="flex items-center">
+                    <div className="hidden space-x-4 lg:flex items-center">
                         {navbarData.map((el, id) => (
                             <LinkItem el={el} key={id} />
                         ))}
                     </div>
 
-                    {/* Right side with "Sign In" and "Register" elements */}
-                    <div className="pr-12 flex items-center">
+                    {/* "Sign In" and "Register" elements */}
+                    <div className="lg:flex hidden flex items-center space-x-4">
                         <li className="m-3 lg:mx-5">
                             <NavLink
                                 to="/signin" // Replace with your sign-in route
@@ -78,6 +93,34 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                     </div>
+
+                    {/* Mobile Menu */}
+                    {menuOpen && (
+                        <div className="md:hidden px-4 mt-2 space-y-4">
+                            {navbarData.map((el) => (
+                                <LinkItem el={el} key={el.id} onClick={toggleMenu} />
+                            ))}
+                            <div className="flex flex-col space-y-2">
+                                <NavLink
+                                    to="/signin"
+                                    activeClassName="text-red-500"
+                                    className="text-gray-800 text-medium hover:text-red-500"
+                                    onClick={toggleMenu}
+                                >
+                                    Sign In
+                                </NavLink>
+                                <NavLink
+                                    to="/register"
+                                    activeClassName="text-red-500"
+                                    className="rounded-md hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500 border-2 px-4 py-2"
+                                    onClick={toggleMenu}
+                                >
+                                    Register
+                                </NavLink>
+                            </div>
+                        </div>
+                    )}
+
                 </ul>
             </nav>
 
