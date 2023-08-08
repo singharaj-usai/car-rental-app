@@ -11,6 +11,7 @@ import Choose from "../Choose/Choose";
 import heroBg from "../../../assets/images/hero-bg.png";
 import Banner from "../Banner/Banner";
 import VehicleModels from "../VehicleModels/VehicleModels";
+import FAQ from "../FAQ/FAQ";
 
 
 const carImages = [dodgeChallenger, durango, jeepCherokee, volkswagen];
@@ -86,6 +87,13 @@ const Home = () => {
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
                             <VehicleModels/>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-wrap md:px-6 p-2 mb-6">
+                <div className="w-full leading-relaxed">
+                    <div className="w-full leading-relaxed">
+                        <FAQ/>
                     </div>
                 </div>
             </div>

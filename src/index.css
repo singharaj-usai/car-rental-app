@@ -19,3 +19,35 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
+/* my faq dropdown animation */
+.faq-container {
+  border-bottom: 1px solid #ddd;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.faq-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-button:hover,
+.faq-button.active {
+  background-color: rgb(239, 68, 68);
+  color: #ffffff;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-answer.active {
+  max-height: 500px;
+}
