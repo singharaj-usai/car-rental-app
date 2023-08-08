@@ -141,7 +141,7 @@ const VehicleModels = () => {
   };
 
   return (
-      <section className="px-4 py-24">
+      <section className="px-4 py-12">
         <div className="text-center md:mx-2">
           <h3 className="text-2xl text-gray-800 font-medium mb-4">Vehicle Models</h3>
           <h1 className="text-5xl text-gray-800 font-bold mb-4">
