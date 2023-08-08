@@ -3,7 +3,7 @@ import Navbar from "./components/sections/Navbar/Navbar";
 
 function App() {
   return (
-      <main className="min-h-screen relative bg-gray-50 pb-10">
+      <main className="min-h-screen relative bg-gray-50">
           <div className="flex flex-wrap">
               <div className="w-full">
                   <Navbar />

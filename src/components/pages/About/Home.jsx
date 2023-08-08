@@ -98,7 +98,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap mb-6">
+            <div className="flex flex-wrap">
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
                         <DownloadApp/>
