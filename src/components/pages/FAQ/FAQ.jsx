@@ -13,7 +13,7 @@ const FAQSection = () => {
         },
         {
             question: "3. What guidelines does your rental company follow for cleaning and sanitation?",
-            answer: "Car rental companies, especially Revv follow a thorough cleaning process. The cleaning process includes vacuuming, wiping, washing, and sanitizing the car with the top-notch quality disinfectant. Attention is paid more to over 20 high-touch points, which include Key / key fob, Steering wheel, Steering column, Seat belts, Seat pockets/seat surfaces, Center console, Areas between seats & doorjambs, Door interiors, Door pockets, Interior door handles, Exterior door handles, Areas between seats & consoles, Cupholders/compartments, Accessory panel/touchscreen, Rearview mirror/side mirrors, Visors/visor mirrors, Instrument panel, Dashboard/vents, Gearstick/gear shift, Trunk release, to name a few.",
+            answer: "Our car rental company follow a thorough cleaning process. The cleaning process includes vacuuming, wiping, washing, and sanitizing the car with the top-notch quality disinfectant. Attention is paid more to over 20 high-touch points, which include Key / key fob, Steering wheel, Steering column, Seat belts, Seat pockets/seat surfaces, Center console, Areas between seats & doorjambs, Door interiors, Door pockets, Interior door handles, Exterior door handles, Areas between seats & consoles, Cupholders/compartments, Accessory panel/touchscreen, Rearview mirror/side mirrors, Visors/visor mirrors, Instrument panel, Dashboard/vents, Gearstick/gear shift, Trunk release, to name a few.",
         },
         {
             question: "4. Eligibility requirement for car rental?",
