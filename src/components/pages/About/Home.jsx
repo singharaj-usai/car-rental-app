@@ -15,6 +15,7 @@ import FAQ from "../FAQ/FAQ";
 import DownloadApp from "../DownloadApp/DownloadApp";
 import ParallaxBanner from "../ParallaxBanner/ParallaxBanner";
 import PhoneBanner from "../PhoneBanner/PhoneBanner";
+import Testimonial from "../Testimonial/Testimonial";
 
 
 const carImages = [dodgeChallenger, durango, jeepCherokee, volkswagen];
@@ -110,6 +111,13 @@ const Home = () => {
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
                         <FAQ/>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-wrap md:px-6 p-2 mb-6">
+                <div className="w-full leading-relaxed">
+                    <div className="w-full leading-relaxed">
+                        <Testimonial/>
                     </div>
                 </div>
             </div>
