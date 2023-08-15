@@ -75,7 +75,7 @@ const Navbar = () => {
                     </div>
 
                     {/* "Sign In" and "Register" elements */}
-                    <div className="lg:flex hidden flex items-center space-x-4">
+                    <div className="px-7 lg:flex hidden flex items-center space-x-4">
                         <li className="m-3 lg:mx-5">
                             <NavLink
                                 to="/signin" // Replace with your sign-in route
