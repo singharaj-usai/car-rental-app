@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
 import Home from "../../pages/About/Home";
 import VehicleModels from "../../pages/VehicleModels/VehicleModels";
+import Testimonials from "../../pages/Testimonial/Testimonial";
 import Logo from "../../../assets/images/car-rental-logo.png";
 import Aventador from "../../../assets/images/2013-Aventador.jpg";
 import R from "../../../assets/images/red-aston-martin.jpg";
 import {FaPhone, FaBars, FaTimes} from "react-icons/fa";
 import PhoneBanner from "../../pages/PhoneBanner/PhoneBanner";
+import Testimonial from "../../pages/Testimonial/Testimonial";
 
 const navbarData = [
     {
@@ -130,6 +132,34 @@ const Navbar = () => {
                 </Route>
                 <Route path="/home">
                     <Home />
+                </Route>
+                <Route path="/testimonials">
+                    <div className="w-full md:order-1" style={{ backgroundImage: `url(${Aventador})`, backgroundSize: "cover", backgroundPosition: "center 75%" }}>
+                        <div className="h-80 relative overflow-hidden">
+                            <div className="absolute inset-0 bg-opacity-75 bg-black">
+                                <div className="px-12 text-white pt-12">
+                                    <h1 className="text-4xl font-bold mb-3">Testimonials</h1>
+                                    <p className="text-lg font-semibold">
+                                        Home / Testimonials
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap md:px-6 p-2 mb-6">
+                        <div className="w-full leading-relaxed">
+                            <div className="w-full leading-relaxed">
+                                <Testimonial/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap">
+                        <div className="w-full leading-relaxed">
+                            <div className="w-full leading-relaxed">
+                                <PhoneBanner/>
+                            </div>
+                        </div>
+                    </div>
                 </Route>
                 <Route path="/vehiclemodels">
                     <div className="w-full md:order-1" style={{ backgroundImage: `url(${Aventador})`, backgroundSize: "cover", backgroundPosition: "center 75%" }}>
