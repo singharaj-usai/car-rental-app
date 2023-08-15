@@ -1,13 +1,15 @@
 import React from "react";
 import TestimonialItem from "./TestimonialItem";
 import Avatar from "../../../assets/images/avatar.jpg";
+import Dude1 from "../../../assets/images/cool-dude.jpg";
+import Dude2 from "../../../assets/images/cool-dude2.jpg";
 
 const testimonialsData = [
     {
         id: 1,
         name: "Dave Davidson",
         city: "New York City",
-        image: Avatar,
+        image: Dude1,
         content:
             "\"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. \""
     },
@@ -15,7 +17,7 @@ const testimonialsData = [
         id: 2,
         name: "John Johnson",
         city: "Chicago",
-        image: Avatar,
+        image: Dude2,
         content:
             "\"The car we rented was in great condition and made our trip even better. I highly recommend people for this car rental website!\""
     },
