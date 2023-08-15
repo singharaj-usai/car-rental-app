@@ -50,7 +50,7 @@ const Navbar = () => {
     };
     return (
         <Router>
-            <nav className="mb-3 py-6 z-10 top-0 bg-white shadow rounded">
+            <nav className="py-6 z-10 top-0 bg-white shadow rounded">
                 <ul className="font-semibold flex justify-between items-center flex-wrap">
                     {/* Logo placeholder */}
                     <div className="pl-12 flex items-center">
