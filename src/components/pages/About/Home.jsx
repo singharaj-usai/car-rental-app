@@ -6,9 +6,6 @@ import dodgeChallenger from "../../../assets/images/Red-Dodge-Challenger-PNG-Pic
 import jeepCherokee from "../../../assets/images/2018-Jeep-Cherokee-Firecracker-Red.png";
 import volkswagen from "../../../assets/images/main-car.png";
 import durango from "../../../assets/images/durango.png";
-import Cars from "../../../assets/images/cars.png";
-import Choose from "../Choose/Choose";
-import heroBg from "../../../assets/images/hero-bg.png";
 import Banner from "../Banner/Banner";
 import VehicleModels from "../VehicleModels/VehicleModels";
 import FAQ from "../FAQ/FAQ";

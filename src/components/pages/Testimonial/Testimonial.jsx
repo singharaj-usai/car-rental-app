@@ -1,6 +1,5 @@
 import React from "react";
 import TestimonialItem from "./TestimonialItem";
-import Avatar from "../../../assets/images/avatar.jpg";
 import Dude1 from "../../../assets/images/cool-dude.jpg";
 import Dude2 from "../../../assets/images/cool-dude2.jpg";
 

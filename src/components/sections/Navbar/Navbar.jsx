@@ -2,11 +2,9 @@ import React, {useState} from "react";
 import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
 import Home from "../../pages/About/Home";
 import VehicleModels from "../../pages/VehicleModels/VehicleModels";
-import Testimonials from "../../pages/Testimonial/Testimonial";
 import Logo from "../../../assets/images/car-rental-logo.png";
 import Aventador from "../../../assets/images/2013-Aventador.jpg";
-import R from "../../../assets/images/red-aston-martin.jpg";
-import {FaPhone, FaBars, FaTimes} from "react-icons/fa";
+import { FaBars, FaTimes} from "react-icons/fa";
 import PhoneBanner from "../../pages/PhoneBanner/PhoneBanner";
 import Testimonial from "../../pages/Testimonial/Testimonial";
 

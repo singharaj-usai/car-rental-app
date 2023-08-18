@@ -1,6 +1,5 @@
 import React from "react";
 import Audi from "../../../assets/images/cars.png";
-import { SiTailwindcss } from "react-icons/si";
 import ChooseItem from "./ChooseItem";
 
 const chooseData = [
