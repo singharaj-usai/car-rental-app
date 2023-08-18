@@ -13,12 +13,7 @@ const BookingItem = (props) => {
                 {label}
             </label>
             {type === "select" ? (
-                <select
-                    id={id}
-                    name={name}
-                    onChange={handleChange}
-                    className="w-full bg-white text-gray-400 border-2 border-gray-300 rounded px-3 py-2"
-                >
+                <select id={id} name={name} onChange={handleChange} className="w-full bg-white text-gray-400 border-2 border-gray-300 rounded px-3 py-2">
                     {options.map((option, index) => (
                         <option key={index} value={option}>
                             {option}
@@ -26,13 +21,7 @@ const BookingItem = (props) => {
                     ))}
                 </select>
             ) : (
-                <input
-                    type={type}
-                    id={id}
-                    name={name}
-                    onChange={handleChange}
-                    className="w-full bg-white text-gray-400 border-2 border-gray-300 rounded px-3 py-2"
-                />
+                <input type={type} id={id} name={name} onChange={handleChange} className="w-full bg-white text-gray-400 border-2 border-gray-300 rounded px-3 py-2"/>
             )}
         </div>
     );

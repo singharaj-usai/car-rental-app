@@ -143,36 +143,32 @@ const VehicleModels = () => {
   return (
       <section className="px-4 py-12">
         <div className="text-center md:mx-2">
-          <h3 className="text-2xl text-gray-800 font-medium mb-4">Vehicle Models</h3>
+          <h3 className="text-2xl text-gray-800 font-medium mb-4">
+            Vehicle Models
+          </h3>
           <h1 className="text-5xl text-gray-800 font-bold mb-4">
             Our Rental Fleet
           </h1>
           <p className="text-gray-500 mb-12">
             Choose from a variety of our amazing vehicles to rent for your next adventure or business trip
           </p>
-        <div className="container mx-auto grid md:grid-cols-3 gap-8">
-          <div className="md:col-span-1">
-            <div className="flex flex-col space-y-2">
-              {vehicleModelsData.map((car) => (
-                  <button
-                      key={car.id}
-                      className={`p-4 border border-gray-300 font-bold rounded ${
-                          selectedCar.id === car.id ? "hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500 border-2" : ""
-                      }`}
-                      onClick={() => handleCarSelect(car)}
-                  >
-                    {car.name}
-                  </button>
-              ))}
+          <div className="container mx-auto grid md:grid-cols-3 gap-8">
+            <div className="md:col-span-1">
+              <div className="flex flex-col space-y-2">
+                {vehicleModelsData.map((car) => (
+                    <button key={car.id} className={`p-4 border border-gray-300 font-bold rounded ${selectedCar.id === car.id ? "hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500 border-2" : ""}`} onClick={() => handleCarSelect(car)}>
+                      {car.name}
+                    </button>
+                ))}
+              </div>
+            </div>
+            <div className="md:col-span-1">
+              <CarModel car={selectedCar} />
+            </div>
+            <div className="md:col-span-1">
+              <CarDetails car={selectedCar} />
             </div>
           </div>
-          <div className="md:col-span-1">
-            <CarModel car={selectedCar} />
-          </div>
-          <div className="md:col-span-1">
-            <CarDetails car={selectedCar} />
-          </div>
-        </div>
         </div>
       </section>
   );

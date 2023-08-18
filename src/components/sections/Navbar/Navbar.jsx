@@ -57,10 +57,7 @@ const Navbar = () => {
 
                     {/* Hamburger Menu Button */}
                     <div className="lg:hidden">
-                        <button
-                            onClick={toggleMenu}
-                            className="pr-9 text-gray-800 hover:text-red-500 focus:outline-none"
-                        >
+                        <button onClick={toggleMenu} className="pr-9 text-gray-800 hover:text-red-500 focus:outline-none">
                             {menuOpen ? <FaTimes /> : <FaBars />}
                         </button>
                     </div>
@@ -75,20 +72,12 @@ const Navbar = () => {
                     {/* "Sign In" and "Register" elements */}
                     <div className="px-7 lg:flex hidden flex items-center space-x-4">
                         <li className="m-3 lg:mx-5">
-                            <NavLink
-                                to="/signin" // Replace with your sign-in route
-                                activeClassName="text-red-500"
-                                className="text-gray-800 text-medium hover:text-red-500"
-                            >
+                            <NavLink to="/signin" activeClassName="text-red-500" className="text-gray-800 text-medium hover:text-red-500">
                                 Sign In
                             </NavLink>
                         </li>
                         <li className="m-3 lg:mx-5">
-                            <NavLink
-                                to="/register" // Replace with your register route
-                                activeClassName="text-red-500"
-                                className="rounded-md hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500 border-2 px-4 py-2"
-                            >
+                            <NavLink to="/register" activeClassName="text-red-500" className="rounded-md hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500 border-2 px-4 py-2">
                                 Register
                             </NavLink>
                         </li>
@@ -101,26 +90,15 @@ const Navbar = () => {
                                 <LinkItem el={el} key={el.id} onClick={toggleMenu} />
                             ))}
                             <div className="flex flex-col space-y-2">
-                                <NavLink
-                                    to="/signin"
-                                    activeClassName="text-red-500"
-                                    className="text-gray-800 text-medium hover:text-red-500"
-                                    onClick={toggleMenu}
-                                >
+                                <NavLink to="/signin" activeClassName="text-red-500" className="text-gray-800 text-medium hover:text-red-500" onClick={toggleMenu}>
                                     Sign In
                                 </NavLink>
-                                <NavLink
-                                    to="/register"
-                                    activeClassName="text-red-500"
-                                    className="rounded-md hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500 border-2 px-4 py-2"
-                                    onClick={toggleMenu}
-                                >
+                                <NavLink to="/register" activeClassName="text-red-500" className="rounded-md hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500 border-2 px-4 py-2" onClick={toggleMenu}>
                                     Register
                                 </NavLink>
                             </div>
                         </div>
                     )}
-
                 </ul>
             </nav>
 

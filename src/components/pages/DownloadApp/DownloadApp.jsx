@@ -10,12 +10,7 @@ const DownloadApp = () => {
                     <DownloadAppItem />
                 </div>
                 <div className="w-full md:w-1/2 md:order-1">
-                    <img
-                        src={PhoneImage}
-                        alt="Phone"
-                        className="max-w-xs mx-auto md:mx-0"
-                        style={{ order: 2 }}
-                    />
+                    <img src={PhoneImage} alt="Phone" className="max-w-xs mx-auto md:mx-0" style={{ order: 2 }}/>
                 </div>
             </div>
         </section>

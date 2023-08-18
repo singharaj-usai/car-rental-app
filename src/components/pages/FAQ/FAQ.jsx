@@ -32,16 +32,16 @@ const FAQSection = () => {
     return (
         <section className="py-12 px-4">
             <div className="text-center md:mx-2">
-                <h3 className="text-2xl text-gray-800 font-medium mb-4">FAQ</h3>
+                <h3 className="text-2xl text-gray-800 font-medium mb-4">
+                    FAQ
+                </h3>
                 <h1 className="text-5xl text-gray-800 font-bold mb-12">
                     Frequently Asked Questions
                 </h1>
                 <div className="container mx-auto">
-
-                        {faq.map((faq, id) => (
-                            <FAQItem key={id} faq={faq}/>
-                        ))}
-
+                    {faq.map((faq, id) => (
+                        <FAQItem key={id} faq={faq}/>
+                    ))}
                 </div>
             </div>
         </section>

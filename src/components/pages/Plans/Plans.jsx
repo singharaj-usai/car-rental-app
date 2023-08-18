@@ -34,7 +34,9 @@ const Plans = () => {
     return (
         <section className="py-12 px-4">
             <div className="text-center md:mx-2">
-                <h3 className="text-2xl text-gray-800 font-medium mb-4">Purchase a protection plan</h3>
+                <h3 className="text-2xl text-gray-800 font-medium mb-4">
+                    Purchase a protection plan
+                </h3>
                 <h1 className="text-5xl text-gray-800 font-bold mb-12">
                     Our Protection Plans
                 </h1>

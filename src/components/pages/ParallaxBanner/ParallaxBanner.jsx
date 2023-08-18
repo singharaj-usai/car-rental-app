@@ -15,7 +15,7 @@ const ParallaxBanner = () => {
                     <p className="text-white text-lg">
                         Star Rating Reviews
                     </p>
-                </div>
+                        </div>
                         <div className="text-center p-4 sm:col-span-2 md:col-span-1">
                             <h1 className="text-white text-4xl font-semibold mb-4">
                                 5+
@@ -40,7 +40,7 @@ const ParallaxBanner = () => {
                                 Years In Business
                             </p>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </Parallax>

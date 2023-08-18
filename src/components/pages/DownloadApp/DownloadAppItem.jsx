@@ -5,7 +5,9 @@ import GooglePlayIcon from "../../../assets/images/google-play.png";
 const DownloadAppItem = () => {
     return (
         <div className="text-center py-10">
-            <h2 className="text-3xl font-semibold mb-4">Download Our App</h2>
+            <h2 className="text-3xl font-semibold mb-4">
+                Download Our App
+            </h2>
             <p className="text-gray-600 mb-6">
                 Download our mobile app for easy access to all of our services and offers, and more!
             </p>

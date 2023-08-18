@@ -14,7 +14,6 @@ import ParallaxBanner from "../ParallaxBanner/ParallaxBanner";
 import PhoneBanner from "../PhoneBanner/PhoneBanner";
 import Testimonial from "../Testimonial/Testimonial";
 
-
 const carImages = [dodgeChallenger, durango, jeepCherokee, volkswagen];
 
 const Home = () => {
@@ -57,11 +56,7 @@ const Home = () => {
                 </div>
                 <div className="w-full md:w-1/2">
                     <div className="md:mx-4 flex items-center justify-center relative" style={{height: "400px"}}>
-                        <img
-                            src={currentImage}
-                            alt="Car"
-                            className={`max-w-full h-auto ${fadeTransition ? "fade-out" : "fade-in"}`}
-                        />
+                        <img src={currentImage} alt="Car" className={`max-w-full h-auto ${fadeTransition ? "fade-out" : "fade-in"}`}/>
                     </div>
                 </div>
             </div>
@@ -79,7 +74,7 @@ const Home = () => {
             <div className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
-                            <Plans/>
+                        <Plans/>
                     </div>
                 </div>
             </div>
@@ -100,7 +95,7 @@ const Home = () => {
             <div className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
                     <div className="w-full leading-relaxed">
-                            <VehicleModels/>
+                        <VehicleModels/>
                     </div>
                 </div>
             </div>
