@@ -14,36 +14,42 @@ const teamMembersData = [
         name: "John D.",
         position: "Subcontractor",
         image: Member2Image,
+        description: "John D. is a dedicated subcontractor with a passion for delivering high-quality workmanship. "
     },
     {
         id: 2,
         name: "Singharaj Usai",
         position: "CEO",
         image: Member1Image,
+        description: "With a track record of driving growth and success, he has positioned our organization as a leader in the industry. ",
     },
     {
         id: 3,
         name: "Slothy Plays",
         position: "Social Media Marketer",
         image: Slothy,
+        description: "Slothy Plays brings a creative spark to our social media marketing efforts.",
     },
     {
         id: 4,
         name: "Russo Plays",
         position: "Social Media Marketer",
         image: RussoPlays,
+        description: "Russo Plays is a dynamic social media marketer who knows how to capture attention.",
     },
     {
         id: 5,
         name: "qd22k",
         position: "Salesman",
         image: RedBucket,
+        description: "qd22k is an enthusiastic salesman who loves building strong client relationships.",
     },
     {
         id: 6,
         name: "NenoYT",
         position: "Manager",
         image: NenoYT,
+        description: "NenoYT is a skilled manager who leads by example and empowers the team to achieve their best.",
     },
 ];
 
