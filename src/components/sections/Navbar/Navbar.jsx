@@ -7,6 +7,7 @@ import Aventador from "../../../assets/images/2013-Aventador.jpg";
 import { FaBars, FaTimes} from "react-icons/fa";
 import PhoneBanner from "../../pages/PhoneBanner/PhoneBanner";
 import Testimonial from "../../pages/Testimonial/Testimonial";
+import Team from "../../pages/Team/Team";
 
 const navbarData = [
     {
@@ -154,6 +155,34 @@ const Navbar = () => {
                         <div className="w-full leading-relaxed">
                             <div className="w-full leading-relaxed">
                                 <VehicleModels/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap">
+                        <div className="w-full leading-relaxed">
+                            <div className="w-full leading-relaxed">
+                                <PhoneBanner/>
+                            </div>
+                        </div>
+                    </div>
+                </Route>
+                <Route path="/team">
+                    <div className="w-full md:order-1" style={{ backgroundImage: `url(${Aventador})`, backgroundSize: "cover", backgroundPosition: "center 75%" }}>
+                        <div className="h-80 relative overflow-hidden">
+                            <div className="absolute inset-0 bg-opacity-75 bg-black">
+                                <div className="px-12 text-white pt-12">
+                                    <h1 className="text-4xl font-bold mb-3">Our Team</h1>
+                                    <p className="text-lg font-semibold">
+                                        Home / Our Team
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap md:px-6 p-2 mb-6">
+                        <div className="w-full leading-relaxed">
+                            <div className="w-full leading-relaxed">
+                                <Team />
                             </div>
                         </div>
                     </div>
