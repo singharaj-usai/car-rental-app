@@ -37,8 +37,8 @@ const Home = () => {
     const currentImage = carImages[currentImageIndex];
 
     return (
-        <section>
-            <div className="flex flex-wrap md:px-6 px-4 mt-12 mb-6">
+        <main>
+            <section className="flex flex-wrap md:px-6 px-4 mt-12 mb-6">
                 <div className="w-full md:w-1/2 leading-relaxed">
                     <div className="md:mx-4">
                         <h3 className="text-2xl text-gray-800 font-bold mb-4">Plan your trip now</h3>
@@ -59,75 +59,55 @@ const Home = () => {
                         <img src={currentImage} alt="Car" className={`max-w-full h-auto ${fadeTransition ? "fade-out" : "fade-in"}`}/>
                     </div>
                 </div>
-            </div>
-            <div className="flex flex-wrap mb-16">
+            </section>
+            <section className="flex flex-wrap mb-16">
                 <div className="w-full leading-relaxed">
                     <div className="md:mx-6">
-                        <div className="w-full leading-relaxed">
-                            <div className="md:mx-4">
-                                <Booking/>
-                            </div>
-                        </div>
+                        <Booking/>
                     </div>
                 </div>
-            </div>
-            <div className="flex flex-wrap md:px-6 p-2 mb-6">
+            </section>
+            <section className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <Plans/>
-                    </div>
+                    <Plans/>
                 </div>
-            </div>
-            <div className="flex flex-wrap">
+            </section>
+            <section className="flex flex-wrap">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <Banner/>
-                    </div>
+                    <Banner/>
                 </div>
-            </div>
-            <div className="flex flex-wrap mb-6">
+            </section>
+            <section className="flex flex-wrap mb-6">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <ParallaxBanner/>
-                    </div>
+                    <ParallaxBanner/>
                 </div>
-            </div>
-            <div className="flex flex-wrap md:px-6 p-2 mb-6">
+            </section>
+            <section className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <VehicleModels/>
-                    </div>
+                    <VehicleModels/>
                 </div>
-            </div>
-            <div className="flex flex-wrap md:px-6 p-2 mb-6">
+            </section>
+            <section className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <FAQ/>
-                    </div>
+                    <FAQ/>
                 </div>
-            </div>
-            <div className="flex flex-wrap md:px-6 p-2 mb-6">
+            </section>
+            <section className="flex flex-wrap md:px-6 p-2 mb-6">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <Testimonial/>
-                    </div>
+                    <Testimonial/>
                 </div>
-            </div>
-            <div className="flex flex-wrap">
+            </section>
+            <section className="flex flex-wrap">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <PhoneBanner/>
-                    </div>
+                    <PhoneBanner/>
                 </div>
-            </div>
-            <div className="flex flex-wrap">
+            </section>
+            <section className="flex flex-wrap">
                 <div className="w-full leading-relaxed">
-                    <div className="w-full leading-relaxed">
-                        <DownloadApp/>
-                    </div>
+                    <DownloadApp/>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
     );
 };
 

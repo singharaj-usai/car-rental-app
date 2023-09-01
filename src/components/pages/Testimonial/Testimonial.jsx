@@ -25,7 +25,7 @@ const testimonialsData = [
 
 const Testimonial = () => {
     return (
-        <section className="py-12 px-4">
+        <div className="py-12 px-4">
             <div className="md:mx-2">
                 <div className="text-center ">
                     <h3 className="text-2xl text-gray-800 font-medium mb-4">
@@ -46,7 +46,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

@@ -141,7 +141,7 @@ const VehicleModels = () => {
   };
 
   return (
-      <section className="px-4 py-12">
+      <div className="px-4 py-12">
         <div className="text-center md:mx-2">
           <h3 className="text-2xl text-gray-800 font-medium mb-4">
             Vehicle Models
@@ -170,7 +170,7 @@ const VehicleModels = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
   );
 };
 

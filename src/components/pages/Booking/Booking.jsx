@@ -44,7 +44,7 @@ const Booking = () => {
     };
 
     return (
-        <section className="shadow-lg rounded  p-10 bg-gray-100">
+        <div className="shadow-lg rounded  p-10 bg-gray-100">
             <div className="container mx-auto">
                 <div className="mx-auto">
                     <Element name="bookingSection">
@@ -116,7 +116,7 @@ const Booking = () => {
                 </div>
             </div>
             {submittedData && <Reservation data={submittedData}/>}
-        </section>
+        </div>
     );
 };
 

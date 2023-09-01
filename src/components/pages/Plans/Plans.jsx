@@ -32,7 +32,7 @@ const Plans = () => {
     ];
 
     return (
-        <section className="py-12 px-4">
+        <div className="py-12 px-4">
             <div className="text-center md:mx-2">
                 <h3 className="text-2xl text-gray-800 font-medium mb-4">
                     Purchase a protection plan
@@ -48,7 +48,7 @@ const Plans = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
