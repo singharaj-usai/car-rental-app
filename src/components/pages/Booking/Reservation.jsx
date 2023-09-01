@@ -15,7 +15,6 @@ const Reservation = (props) => {
         "Audi S1": require("../../../assets/images/audi-s1.png").default,
     };
 
-
     return (
         <div className="shadow-md rounded p-6 bg-white mt-4">
             <h2 className="text-3xl text-gray-800 font-bold mb-4">Reservation Details</h2>
