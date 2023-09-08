@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
 import Home from "../../pages/About/Home";
 import VehicleModels from "../../pages/VehicleModels/VehicleModels";
+import Models from "../../pages/Models/Models";
 import Logo from "../../../assets/images/car-rental-logo.png";
 import Aventador from "../../../assets/images/2013-Aventador.jpg";
 import { FaBars, FaTimes} from "react-icons/fa";
@@ -154,7 +155,7 @@ const Navbar = () => {
                     <div className="flex flex-wrap md:px-6 p-2 mb-6">
                         <div className="w-full leading-relaxed">
                             <div className="w-full leading-relaxed">
-                                <VehicleModels/>
+                                <Models/>
                             </div>
                         </div>
                     </div>
