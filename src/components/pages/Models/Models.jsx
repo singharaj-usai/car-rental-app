@@ -5,6 +5,8 @@ import ChevyTrax from "../../../assets/images/chevy-trax-2020.png";
 import Challenger from "../../../assets/images/Red-Dodge-Challenger-PNG-Pic.png";
 import DodgeChargerDaytona from "../../../assets/images/dodge-charger-daytona.png";
 import Durango from "../../../assets/images/durango.png";
+import Cherokee from "../../../assets/images/2018-Jeep-Cherokee-Firecracker-Red.png";
+import TeslaRoadster from "../../../assets/images/tesla-roadster.png";
 
 // Define your vehicle models data here
 const vehicleModelsData = [
@@ -98,6 +100,36 @@ const vehicleModelsData = [
             fuel: "Gasoline",
         },
     },
+    {
+        id: 7,
+        name: "Jeep Cherokee",
+        image: Cherokee,
+        description: {
+            rent: "$64",
+            brand: "Jeep",
+            model: "Cherokee",
+            year: "2018",
+            color: "Red",
+            doors: "4 Door",
+            transmission: "Automatic",
+            fuel: "Gasoline",
+        },
+    },
+    {
+        id: 8,
+        name: "Tesla Roadster",
+        image: TeslaRoadster,
+        description: {
+            rent: "$80",
+            brand: "Tesla",
+            model: "Roadster",
+            year: "2021",
+            color: "Red",
+            doors: "4 Door",
+            transmission: "Single-Speed",
+            fuel: "Electric",
+        },
+    },
 ];
 
 const VehicleModels = () => {
@@ -109,7 +141,7 @@ const VehicleModels = () => {
 
     return (
         <section className="px-4 py-12">
-            <div className="text-center">
+            <div className="px-16 text-center">
                 <h3 className="text-2xl text-gray-800 font-medium mb-4">
                     Vehicle Models
                 </h3>
@@ -119,9 +151,9 @@ const VehicleModels = () => {
                 <p className="text-gray-500 mb-8">
                     Choose from a variety of our amazing vehicles to rent for your next adventure or business trip.
                 </p>
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {vehicleModelsData.map((car) => (
-                        <div className={`border border-gray-200 p-4 rounded-md shadow-md cursor-pointer hover:shadow-lg ${selectedCar.id === car.id ? "border-red-500" : ""}`}
+                        <div className={`border border-gray-400 p-4 rounded-md shadow-md cursor-pointer hover:shadow-lg ${selectedCar.id === car.id ? "border-red-500" : ""}`}
                             key={car.id}
                             onClick={() => handleCarSelect(car)}>
                             <img className="w-full h-48 object-contain mb-2"
@@ -133,8 +165,22 @@ const VehicleModels = () => {
                             <p className="text-gray-500">
                                 {car.description.year} - {car.description.color}
                             </p>
+                            <p className="text-gray-500 font-semibold">
+                                {car.description.fuel} / {car.description.transmission}
+                            </p>
                             <div className="px-4 py-2 font-semibold text-lg">
                                 {car.description.rent} / <span className="text-sm">per day</span>
+                            </div>
+                            <div className="mt-4 text-center">
+                                <button
+                                    className="py-2 px-4 w-full rounded hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500  border-2"
+                                    onClick={() => {
+                                        // Handle button click here
+                                        console.log("Button clicked for", car.name);
+                                    }}
+                                >
+                                    Book Now
+                                </button>
                             </div>
                         </div>
                     ))}
