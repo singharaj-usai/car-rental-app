@@ -58,7 +58,8 @@ const Navbar = () => {
 
                     {/* Hamburger Menu Button */}
                     <div className="lg:hidden">
-                        <button onClick={toggleMenu} className="pr-9 text-gray-800 hover:text-red-500 focus:outline-none">
+                        <button onClick={toggleMenu} className="pr-9 text-gray-800 hover:text-red-500 focus:outline-none"
+                                title={menuOpen ? "Close Menu" : "Open Menu"}>
                             {menuOpen ? <FaTimes /> : <FaBars />}
                         </button>
                     </div>
