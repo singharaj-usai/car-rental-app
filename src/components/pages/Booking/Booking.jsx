@@ -47,7 +47,7 @@ const Booking = () => {
         <div className="shadow-lg rounded  p-10 bg-gray-100">
             <div className="container mx-auto">
                 <div className="mx-auto">
-                    <Element name="bookingSection">
+                    <Element name="bookingSection" id="bookingSection">
                         <h2 className="text-3xl text-gray-800 font-bold mb-6">Book Your Car Now</h2>
                         <form className="space-y-4" onSubmit={handleSubmit}>
                             <div className="flex items-center">

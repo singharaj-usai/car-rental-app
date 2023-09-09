@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import {Link} from "react-scroll";
 import AudiS1 from "../../../assets/images/audi-s1.png";
 import BMWIX from "../../../assets/images/bmw-ix.png";
 import ChevyTrax from "../../../assets/images/chevy-trax-2020.png";
@@ -133,10 +135,17 @@ const vehicleModelsData = [
 ];
 
 const VehicleModels = () => {
+    const history = useHistory();
     const [selectedCar, setSelectedCar] = useState(vehicleModelsData[0]);
 
     const handleCarSelect = (car) => {
         setSelectedCar(car);
+    };
+
+    const handleBookNowClick = (car) => {
+        console.log("Button clicked for", car.name);
+
+        history.push("/home");
     };
 
     return (
@@ -171,16 +180,14 @@ const VehicleModels = () => {
                             <div className="px-4 py-2 font-semibold text-lg">
                                 {car.description.rent} / <span className="text-sm">per day</span>
                             </div>
-                            <div className="mt-4 text-center">
-                                <button
-                                    className="py-2 px-4 w-full rounded hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500  border-2"
-                                    onClick={() => {
-                                        // Handle button click here
-                                        console.log("Button clicked for", car.name);
-                                    }}
-                                >
-                                    Book Now
-                                </button>
+                                <div className="mt-4">
+                                    <div className="flex justify-center items-center mb-1">
+                                    <Link to="bookingSection" smooth={true} duration={500}
+                                        className="py-2 px-4 w-full rounded hover:text-red-500 hover:bg-gray-50 transition ease-out duration-200 text-md text-gray-50 font-bold bg-red-500 border-red-500  border-2"
+                                        onClick={() => handleBookNowClick(car)}>
+                                        Book Now
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     ))}
