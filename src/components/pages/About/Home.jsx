@@ -44,7 +44,7 @@ const Home = () => {
                         <h3 className="text-2xl text-gray-800 font-bold mb-4">Plan your trip now</h3>
                         <h1 className="text-5xl text-gray-800 font-bold">
                             Save{" "}
-                            <a className="text-red-500">big</a>
+                            <span className="text-red-500">big</span>
                             {" "} with our car rental
                         </h1>
                         <p className=" my-4 text-gray-500">

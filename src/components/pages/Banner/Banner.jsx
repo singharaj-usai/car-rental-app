@@ -7,7 +7,7 @@ const Banner = () => {
                 <div className="text-center text-white">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Save big with our cheap car rental!</h1>
                     <p className="text-xl sm:text-2xl">Airport Pickup Or Nearest Pickup Center.{" "}
-                        <a className="text-red-500">24 Hour</a>
+                        <span className="text-red-500">24 Hour</span>
                         {" "} Customer Support.</p>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
 import Home from "../../pages/About/Home";
-import VehicleModels from "../../pages/VehicleModels/VehicleModels";
 import Models from "../../pages/Models/Models";
 import Logo from "../../../assets/images/car-rental-logo.png";
 import Aventador from "../../../assets/images/2013-Aventador.jpg";
